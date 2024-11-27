@@ -233,6 +233,12 @@ public class Algebra {
 		if (g==1) {
 			return 1;
 		}
+		if (g==2) {
+			return 1;
+		}
+		if (g==3) {
+			return 1;
+		}
 		while (pow(i, power) != g) {
         
 			i++;
@@ -243,7 +249,9 @@ public class Algebra {
 			}
 			
 		}		
-		
+		if ((pow(i, power) >g)) {
+			i = i -1;
+		}
 		return i;	
 		}
 		
